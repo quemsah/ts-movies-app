@@ -15334,6 +15334,10 @@ img.rounded-circle {
 .sn-bg-4 {
   background-image: url(..//img/menu/bg.jpg) !important; }
 
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
 .card .card-rating {
   position: absolute;
   left: 0;
@@ -15352,7 +15356,7 @@ img.rounded-circle {
   width: 100%;
   position: absolute;
   bottom: 0px;
-  background: rgba(33, 37, 41, 0.8); }
+  background: linear-gradient(to top, #212529 33%, rgba(33, 37, 41, 0.5)); }
   .card .card-body hr {
     background-color: #eeeeee;
     height: 1px;
@@ -15381,5 +15385,10 @@ img.rounded-circle {
   padding: 0px; }
 .card .md-form label {
   font-weight: 300; }
+
+.g-logo {
+  width: auto;
+  height: auto;
+  object-fit: cover; }
 
 /*# sourceMappingURL=main.css.map */

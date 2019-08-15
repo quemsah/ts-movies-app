@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Movies App</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/custom-styles.css">
+</head>
+
+<body class="fixed-sn white-skin">
+
+  <!-- Main Navigation -->
+  <header>
+
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav sn-bg-4 fixed">
+      <ul class="custom-scrollbar">
+
+        <!-- Logo -->
+        <li class="logo-sn waves-effect py-3">
+          <div class="text-center">
+            <a href="#" class="pl-0"><img src="../img/logo/logo140.png"></a>
+          </div>
+        </li>
+
+        <!-- Search Form -->
+        <li>
+          <form class="search-form" role="search">
+            <div class="md-form mt-0 waves-light">
+              <input type="text" class="form-control py-2" placeholder="Find movies...">
+            </div>
+          </form>
+        </li>
+
+        <!-- Side navigation links -->
+        <li>
+          <ul class="collapsible collapsible-accordion">
+
+
+            <!-- Simple link -->
+            <li>
+              <a href="main.html" class="collapsible-header waves-effect"><i class="w-fa far"></i>Movies</a>
+            </li>
+            <li>
+              <a href="../sections/sections.html" class="collapsible-header waves-effect"><i class="w-fa fas"></i>About
+                the project</a>
+            </li>
+
+          </ul>
+        </li>
+        <!-- Side navigation links -->
+
+      </ul>
+      <div class="sidenav-bg mask-strong"></div>
+    </div>
+    <!-- Sidebar navigation -->
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
+
+      <!-- SideNav slide-out button -->
+      <div class="float-left">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+      </div>
+
+      <!-- Breadcrumb -->
+      <div class="breadcrumb-dn mr-auto">
+        <p>Main Page</p>
+      </div>
+
+      <div class="d-flex change-mode">
+
+        <div class="ml-auto mb-0 mr-3 change-mode-wrapper">
+          <button class="btn btn-outline-black btn-sm" id="dark-mode">Change theme</button>
+        </div>
+
+        <!-- Navbar links -->
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+
+          <!-- Dropdown -->
+          <li class="nav-item">
+            <a class="nav-link waves-effect"><i class="fas fa-envelope"></i> <span
+                class="clearfix d-none d-sm-inline-block">Mail us</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle waves-effect" href="#" id="userDropdown" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Profile</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+              <a class="dropdown-item" href="login.html">Log in</a>
+            </div>
+          </li>
+
+        </ul>
+        <!-- Navbar links -->
+
+      </div>
+
+    </nav>
+    <!-- Navbar -->
+
+  </header>
+  <!-- Main Navigation -->
+
+  <!-- Main layout -->
+  <main>
+
+    <div class="container-fluid">
+
+      <section class="mb-5 mt-5">
+        <div class="row">
+
+          <div class="form-login col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-5">
+
+            <!-- Form with header -->
+            
+              <div class="card-body">
+
+                <!-- Header -->
+                <div class="form-header blue-gradient">
+                  <h3 class="font-weight-500 my-2 py-1"><i class="fas fa-user"></i> Log in:</h3>
+                </div>
+
+                <!-- Body -->
+                <div class="md-form">
+                  <i class="fas fa-envelope prefix blue-text"></i>
+                  <input type="text" id="orangeForm-email" class="form-control">
+                  <label for="orangeForm-email">Your email</label>
+                </div>
+
+                <div class="md-form">
+                  <i class="fas fa-lock prefix blue-text"></i>
+                  <input type="password" id="orangeForm-pass" class="form-control">
+                  <label for="orangeForm-pass">Your password</label>
+                </div>
+
+                <div class="text-center">
+                  <button class="btn blue-gradient btn-lg">Log in</button>
+                  <button class="btn blue-gradient btn-lg">Sign up with Google</button>
+                  <hr class="mt-4">
+                </div>
+
+              </div>
+            
+            <!-- Form with header -->
+
+          </div>
+
+
+
+
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <!-- Main layout -->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+  <!-- Initializations -->
+  <script>
+    // SideNav Initialization
+    $(".button-collapse").sideNav();
+
+    var container = document.querySelector('.custom-scrollbar');
+    var ps = new PerfectScrollbar(container, {
+      wheelSpeed: 2,
+      wheelPropagation: true,
+      minScrollbarLength: 20
+    });
+
+    // Material Select Initialization
+    $(document).ready(function () {
+      $('.mdb-select').material_select();
+    });
+
+    // Tooltips Initialization
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  <script>
+    $(function () {
+      $('#dark-mode').on('click', function (e) {
+
+        e.preventDefault();
+        $('h4, button').not('.check').toggleClass('text-white');
+        $('.list-panel a').toggleClass('dark-grey-text');
+        $('footer, .card').toggleClass('dark-card-admin');
+        $('body, .navbar').toggleClass('white-skin navy-blue-skin');
+        $(this).toggleClass('white text-dark btn-outline-black');
+        $('body').toggleClass('dark-bg-admin');
+        $('h6, .card, p, td, th, i, li a, h4, input, label').not(
+          '#slide-out i, #slide-out a, .dropdown-item i, .dropdown-item').toggleClass('text-white');
+        $('.btn-dash').toggleClass('grey blue').toggleClass('lighten-3 darken-3');
+        $('.gradient-card-header').toggleClass('white black lighten-4');
+        $('.list-panel a').toggleClass('navy-blue-bg-a text-white').toggleClass('list-group-border');
+        $('.card, .card-rating').toggleClass('dark-card-admin');
+        $('.card-rating a').toggleClass('text-white');
+        $('#dark-mode').toggleClass('dark-card-admin').removeClass('text-dark');
+
+      });
+    });
+  </script>
+
+</body>
+
+</html>
