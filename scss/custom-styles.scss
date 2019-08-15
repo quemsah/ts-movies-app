@@ -1,0 +1,74 @@
+.sn-bg-4 {
+    background-image: url(..//img/menu/bg.jpg) !important;
+  }
+
+// Cards
+$card-white-gray: #eeeeee !default;
+$card-dark-gray: #212529 !default;
+
+.card {
+    .card-rating {
+        position: absolute;
+        left: 0; top: 0;
+        width: 60px; height: 30px;
+        background: rgba($card-white-gray, 1);
+        text-align: center;
+        line-height: 30px;
+        font-size: 0.8em;
+        color: $card-dark-gray;
+        z-index: 124;
+    
+        .fa-star {
+            color: $card-dark-gray;
+        }
+    }
+    .card-body {
+        width:100%;
+        position: absolute;
+        bottom: 0px;
+        background: rgba($card-dark-gray, 0.8);
+
+        hr {
+            background-color: $card-white-gray;
+            height: 1px;
+            border: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400;
+        }
+
+        .card-title {
+            color: $card-white-gray;
+
+            a {
+                color: $card-white-gray;
+            }
+            @media (max-width: 1200px) {
+                font-size: 16px;
+              }
+        }
+
+        .card-text {
+            color: $card-white-gray;
+            font-weight: 400;
+            @media (max-width: 1200px) {
+                font-size: 12px;
+              }
+        }
+    }
+    .card-footer {
+    padding:0px;
+    }
+
+    .md-form {
+        label {
+            font-weight: 300;
+        }
+    }
+}
