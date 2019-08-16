@@ -89,5 +89,24 @@ $card-dark-gray: #212529 !default;
 .g-logo {
     width: auto;
     height: auto;
-    object-fit:cover;
+    object-fit: cover;
 }
+
+//Footer
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    /* Чтобы занимал оставшееся пространство */
+    flex-grow: 1;
+}
+
+footer {
+    /* Чтобы footer не уменьшался */
+    flex-shrink: 0;
+    background: black;
+}
+
