@@ -134,7 +134,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
               <a class="dropdown-item" href="login.html">Log in</a>
-              <a class="dropdown-item" href="#">My account</a>
+              <a class="dropdown-item" href="profile.html">My account</a>
             </div>
           </li>
 
@@ -162,7 +162,7 @@
 
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <!-- Card -->
-            <div class="card h-100">
+            <div class="card movie-card movie-card h-100">
               <!-- Card image -->
               <div class="card-rating">
                 <a class=" ">8.8 <i class="far fa-star"> </i></a>
@@ -199,7 +199,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <!-- Card -->
-            <div class="card h-100">
+            <div class="card movie-card h-100">
               <!-- Card image -->
               <div class="card-rating">
                 <a class=" ">8.7 <i class="far fa-star"> </i></a>
@@ -233,7 +233,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <!-- Card -->
-            <div class="card h-100">
+            <div class="card movie-card h-100">
               <!-- Card image -->
               <div class="card-rating">
                 <a class=" ">8.9 <i class="far fa-star"> </i></a>
@@ -268,7 +268,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <!-- Card -->
-            <div class="card h-100">
+            <div class="card movie-card h-100">
               <!-- Card image -->
               <div class="card-rating">
                 <a class=" ">8.1 <i class="far fa-star"> </i></a>
@@ -302,7 +302,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <!-- Card -->
-            <div class="card h-100">
+            <div class="card movie-card h-100">
               <!-- Card image -->
               <div class="card-rating">
                 <a class=" ">7.2 <i class="far fa-star"> </i></a>
@@ -337,7 +337,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <!-- Card -->
-            <div class="card h-100">
+            <div class="card movie-card h-100">
               <!-- Card image -->
               <div class="card-rating">
                 <a class=" ">7.3 <i class="far fa-star"> </i></a>
@@ -372,7 +372,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <!-- Card -->
-            <div class="card h-100">
+            <div class="card movie-card h-100">
               <!-- Card image -->
               <div class="card-rating">
                 <a class=" ">6.9 <i class="far fa-star"> </i></a>
@@ -407,7 +407,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <!-- Card -->
-            <div class="card h-100">
+            <div class="card movie-card h-100">
               <!-- Card image -->
               <div class="card-rating">
                 <a class=" ">7.3 <i class="far fa-star"> </i></a>
@@ -442,7 +442,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <!-- Card -->
-            <div class="card h-100">
+            <div class="card movie-card h-100">
               <!-- Card image -->
               <div class="card-rating">
                 <a class=" ">8.8 <i class="far fa-star"> </i></a>
@@ -477,7 +477,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <!-- Card -->
-            <div class="card h-100">
+            <div class="card movie-card h-100">
               <!-- Card image -->
               <div class="card-rating">
                 <a class=" ">6.6 <i class="far fa-star"> </i></a>
@@ -522,7 +522,7 @@
   <!-- Main layout -->
 
   <!-- Footer -->
-  <footer class="page-footer pt-0 mt-5 rgba-stylish-light">
+  <footer class="page-footer pt-0 mt-5 blue-gradient-rgba">
 
     <!-- Copyright -->
     <div class="footer-copyright py-3 text-right">
@@ -543,52 +543,12 @@
   <script type="text/javascript" src="../js/bootstrap.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="../js/mdb.min.js"></script>
-
+  <!-- Darkmode -->
+  <script type="text/javascript" src="../js/darkmode.js"></script>
   <!-- Initializations -->
   <script>
     // SideNav Initialization
     $(".button-collapse").sideNav();
-
-    var container = document.querySelector('.custom-scrollbar');
-    var ps = new PerfectScrollbar(container, {
-      wheelSpeed: 2,
-      wheelPropagation: true,
-      minScrollbarLength: 20
-    });
-
-    // Material Select Initialization
-    $(document).ready(function () {
-      $('.mdb-select').material_select();
-    });
-
-    // Tooltips Initialization
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
-
-  <script>
-    $(function () {
-      $('#dark-mode').on('click', function (e) {
-
-        e.preventDefault();
-        $('h4, button').not('.check').toggleClass('text-white');
-        $('.list-panel a').toggleClass('dark-grey-text');
-        $('footer, .card').toggleClass('dark-card-admin');
-        $('body, .navbar').toggleClass('white-skin navy-blue-skin');
-        $(this).toggleClass('white text-dark btn-outline-black');
-        $('body').toggleClass('dark-bg-admin');
-        $('h6, .card, p, td, th, i, li a, h4, input, label').not(
-          '#slide-out i, #slide-out a, .dropdown-item i, .dropdown-item').toggleClass('text-white');
-        $('.btn-dash').toggleClass('grey blue').toggleClass('lighten-3 darken-3');
-        $('.gradient-card-header').toggleClass('white black lighten-4');
-        $('.list-panel a').toggleClass('navy-blue-bg-a text-white').toggleClass('list-group-border');
-        $('.card, .card-rating').toggleClass('dark-card-admin');
-        $('.card-rating a').toggleClass('text-white');
-        $('#dark-mode').toggleClass('dark-card-admin').removeClass('text-dark');
-
-      });
-    });
   </script>
 
 </body>

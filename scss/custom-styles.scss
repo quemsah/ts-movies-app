@@ -2,11 +2,11 @@
     background-image: url(..//img/menu/bg.jpg) !important;
 }
 
-// Cards
+// Cards movies
 $card-white-gray: #eeeeee !default;
 $card-dark-gray: #212529 !default;
 
-.card {
+.movie-card {
     img {
         width: 100%;
         height: 100%;
@@ -110,3 +110,11 @@ footer {
     background: black;
 }
 
+// Cards profile
+.profile-card {
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+}

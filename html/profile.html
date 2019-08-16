@@ -117,51 +117,131 @@
 
     <div class="container-fluid">
 
-      <section class="mb-5 mt-5">
+     
         <div class="row">
+          <!-- First column -->
+          <div class="col-lg-4 mb-4 mt-4">
 
-          <div class=" col-xl-5 col-lg-6 col-md-8 col-sm-8 mx-auto mt-5">
+            <!-- Card -->
+            <div class="card profile-card  card-cascade narrower">
 
-            <!-- Form with header -->
-
-            <div class="card-body">
-
-              <!-- Header -->
-              <div class="form-header blue-gradient">
-                <h3 class="font-weight-500 my-2 py-1"><i class="fas fa-user"></i> Log in:</h3>
+              <!-- Card image -->
+              <div class="view view-cascade gradient-card-header blue-gradient">
+                <h5 class="mb-0 font-weight-bold">Edit Photo</h5>
               </div>
+              <!-- Card image -->
 
-              <!-- Body -->
-              <div class="md-form">
-                <i class="fas fa-envelope prefix blue-text"></i>
-                <input type="text" id="orangeForm-email" class="form-control">
-                <label for="orangeForm-email">Your email</label>
-              </div>
+              <!-- Card content -->
+              <div class="card-profile card-body card-body-cascade text-center">
+                <img src="/img/avatars/a1.jpg" alt="User Photo" class="z-depth-1 mb-3 mx-auto">
 
-              <div class="md-form">
-                <i class="fas fa-lock prefix blue-text"></i>
-                <input type="password" id="orangeForm-pass" class="form-control">
-                <label for="orangeForm-pass">Your password</label>
+                <p class="text-muted"><small>Avatar should be a square</small></p>
+                <div class="row flex-center">
+                  <button class="btn btn-info btn-rounded btn-sm waves-effect waves-light blue-gradient">Upload New Photo</button><br>
+                  <button class="btn btn-danger btn-rounded btn-sm waves-effect waves-light">Delete</button>
+                </div>
               </div>
-
-              <div class="text-center">
-                <button class="btn blue-gradient btn-lg">Log in</button>
-                <button class="btn blue-gradient btn-lg">Sign up with Google</button>
-                <hr class="mt-4">
-                <h5>Not registered yet?  <a href="register.html">Create an account</a></h5>
-              </div>
+              <!-- Card content -->
 
             </div>
-
-            <!-- Form with header -->
+            <!-- Card -->
 
           </div>
+          <!-- First column -->
 
+          <!-- Second column -->
+          <div class="col-lg-8 mb-4 mt-4">
 
+            <!-- Card -->
+            <div class="card card-cascade narrower">
 
+              <!-- Card image -->
+              <div class="view view-cascade gradient-card-header blue-gradient">
+                <h5 class="mb-0 font-weight-bold">Edit Account</h5>
+              </div>
+              <!-- Card image -->
+
+              <!-- Card content -->
+              <div class="card-body card-body-cascade text-center">
+
+                <!-- Edit Form -->
+                <form>
+                  <!-- First row -->
+                  <div class="row">
+                    <!-- First column -->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="form81" class="form-control validate">
+                        <label for="form81" data-error="wrong" data-success="right">E-mail address</label>
+                      </div>
+                    </div>
+
+                    <!-- Second column -->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="form82" class="form-control validate">
+                        <label for="form82" data-error="wrong" data-success="right">Name</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- First row -->
+
+                  <!-- Second row -->
+                  <div class="row">
+
+                    <!-- First column -->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="password" id="form76" class="form-control validate">
+                        <label for="form76">Password</label>
+                      </div>
+                    </div>
+                    <!-- Second column -->
+
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="password" id="form77" class="form-control validate">
+                        <label for="form77" data-error="wrong" data-success="right">Old password</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Second row -->
+
+                  <!-- Third row -->
+                  <div class="row">
+
+                    <!-- First column -->
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <textarea type="text" id="form78" class="md-textarea form-control" rows="3"></textarea>
+                        <label for="form78" class="">About me</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Third row -->
+
+                  <!-- Fourth row -->
+                  <div class="row">
+                    <div class="col-md-12 text-center my-4">
+                      <span class="waves-input-wrapper waves-effect waves-light "><input type="submit" value="Update Account" class="btn btn-info btn-rounded blue-gradient"></span>
+                    </div>
+                  </div>
+                  <!-- Fourth row -->
+
+                </form>
+                <!-- Edit Form -->
+
+              </div>
+              <!-- Card content -->
+
+            </div>
+            <!-- Card -->
+
+          </div>
+          <!-- Second column -->
 
         </div>
-      </section>
+     
     </div>
 
   </main>

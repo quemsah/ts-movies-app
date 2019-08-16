@@ -2,11 +2,11 @@
 .sn-bg-4 {
   background-image: url(..//img/menu/bg.jpg) !important; }
 
-.card img {
+.movie-card img {
   width: 100%;
   height: 100%;
   object-fit: contain; }
-.card .card-rating {
+.movie-card .card-rating {
   position: absolute;
   left: 0;
   top: 0;
@@ -18,40 +18,40 @@
   font-size: 0.8em;
   color: #212529;
   z-index: 124; }
-  .card .card-rating .fa-star {
+  .movie-card .card-rating .fa-star {
     color: #212529; }
-.card .card-body {
+.movie-card .card-body {
   width: 100%;
   position: absolute;
   bottom: 0px;
   background: linear-gradient(to top, #212529 33%, rgba(33, 37, 41, 0.5)); }
-  .card .card-body hr {
+  .movie-card .card-body hr {
     background-color: #eeeeee;
     height: 1px;
     border: 0; }
-  .card .card-body h1,
-  .card .card-body h2,
-  .card .card-body h3,
-  .card .card-body h4,
-  .card .card-body h5,
-  .card .card-body h6 {
+  .movie-card .card-body h1,
+  .movie-card .card-body h2,
+  .movie-card .card-body h3,
+  .movie-card .card-body h4,
+  .movie-card .card-body h5,
+  .movie-card .card-body h6 {
     font-weight: 400; }
-  .card .card-body .card-title {
+  .movie-card .card-body .card-title {
     color: #eeeeee; }
-    .card .card-body .card-title a {
+    .movie-card .card-body .card-title a {
       color: #eeeeee; }
     @media (max-width: 1200px) {
-      .card .card-body .card-title {
+      .movie-card .card-body .card-title {
         font-size: 16px; } }
-  .card .card-body .card-text {
+  .movie-card .card-body .card-text {
     color: #eeeeee;
     font-weight: 400; }
     @media (max-width: 1200px) {
-      .card .card-body .card-text {
+      .movie-card .card-body .card-text {
         font-size: 12px; } }
-.card .card-footer {
+.movie-card .card-footer {
   padding: 0px; }
-.card .md-form label {
+.movie-card .md-form label {
   font-weight: 300; }
 
 .g-logo {
@@ -72,5 +72,10 @@ footer {
   /* Чтобы footer не уменьшался */
   flex-shrink: 0;
   background: black; }
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; }
 
 /*# sourceMappingURL=custom-styles.css.map */
