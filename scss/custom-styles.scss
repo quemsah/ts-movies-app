@@ -1,5 +1,5 @@
 .sn-bg-4 {
-    background-image: url(..//img/menu/bg.jpg) !important;
+    background-image: url(..//img/menu/menu-bg2.jpg) !important;
 }
 
 // Cards movies
@@ -110,11 +110,28 @@ footer {
     background: black;
 }
 
-// Cards profile
+// Profile
 .profile-card {
     img {
         width: 100px;
         height: 100px;
         object-fit: contain;
     }
+}
+
+.profile-title {
+    color: $card-dark-gray;
+}
+
+.friend-card {
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+}
+//Find a friend
+.find-a-friend.input-group .input-group-text {
+    background-color: transparent;
+    border: none;
 }

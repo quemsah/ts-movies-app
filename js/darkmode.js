@@ -8,7 +8,7 @@ $(function () {
     $('body, .navbar').toggleClass('white-skin navy-blue-skin');
     $(this).toggleClass('white text-dark btn-outline-black');
     $('body').toggleClass('dark-bg-admin');
-    $('h6, .card, p, td, th, i, li a, h4, h5, input, label').not(
+    $('h6, .card, p, td, th, i, li a, h2, h4, h5, input, label').not(
       '#slide-out i, #slide-out a, .dropdown-item i, .dropdown-item').toggleClass('text-white');
     $('.btn-dash').toggleClass('grey blue').toggleClass('lighten-3 darken-3');
     $('.gradient-card-header').toggleClass('white black lighten-4');
