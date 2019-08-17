@@ -315,7 +315,7 @@ $skins: map-merge((
     "skin-primary-color":      #309e9e,
     "skin-navbar":             #353b50,
     "skin-footer-color":       #353b50,
-    "skin-accent":             #40c6c6,
+    "skin-accent":             #353b50, //40c6c6
     "skin-flat":               #4c5678,
     "skin-sidenav-item":       rgba(37, 207, 207, .8),
     "skin-sidenav-item-hover": rgba(37, 207, 207, .8),
@@ -324,8 +324,8 @@ $skins: map-merge((
     "skin-mask-slight":        rgba(14, 15,  32,  .5),
     "skin-mask-light":         rgba(14, 15,  32,  .65),
     "skin-mask-strong":        rgba(14, 15,  32,  .8),
-    "skin-sn-child":           #40c6c6,
-    "skin-btn-primary":        #40c6c6,
+    "skin-sn-child":           #353b50, //40c6c6
+    "skin-btn-primary":        #353b50, //40c6c6
     "skin-btn-secondary":      #7e51b4,
     "skin-btn-default":        #293756,
     "skin-text":               $white

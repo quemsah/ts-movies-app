@@ -5,6 +5,7 @@
 // Cards movies
 $card-white-gray: #eeeeee !default;
 $card-dark-gray: #212529 !default;
+$yellow: yellow !default;
 
 .movie-card {
     img {
@@ -29,6 +30,34 @@ $card-dark-gray: #212529 !default;
         .fa-star {
             color: $card-dark-gray;
         }
+    }
+
+    .card-favourite {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        background: rgba($card-white-gray, 1);
+        text-align: center;
+        line-height: 30px;
+        font-size: 0.8em;
+        color: $card-dark-gray;
+        z-index: 124;
+    }
+
+    .card-watch-later {
+        position: absolute;
+        right: 30px;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        background: rgba($card-white-gray, 1);
+        text-align: center;
+        line-height: 30px;
+        font-size: 0.8em;
+        color: $card-dark-gray;
+        z-index: 124;
     }
 
     .card-body {
@@ -130,8 +159,17 @@ footer {
         object-fit: contain;
     }
 }
+
 //Find a friend
 .find-a-friend.input-group .input-group-text {
     background-color: transparent;
     border: none;
 }
+//sort by filter by
+.row.select-by {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+

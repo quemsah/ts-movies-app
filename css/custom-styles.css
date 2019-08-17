@@ -20,6 +20,30 @@
   z-index: 124; }
   .movie-card .card-rating .fa-star {
     color: #212529; }
+.movie-card .card-favourite {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: #eeeeee;
+  text-align: center;
+  line-height: 30px;
+  font-size: 0.8em;
+  color: #212529;
+  z-index: 124; }
+.movie-card .card-watch-later {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: #eeeeee;
+  text-align: center;
+  line-height: 30px;
+  font-size: 0.8em;
+  color: #212529;
+  z-index: 124; }
 .movie-card .card-body {
   width: 100%;
   position: absolute;
@@ -89,5 +113,11 @@ footer {
 .find-a-friend.input-group .input-group-text {
   background-color: transparent;
   border: none; }
+
+.row.select-by {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px; }
 
 /*# sourceMappingURL=custom-styles.css.map */
