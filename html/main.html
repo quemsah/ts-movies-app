@@ -43,12 +43,11 @@
               <a href="main.html" class="collapsible-header waves-effect"><i class="w-fa far"></i>Movies</a>
             </li>
             <li>
-              <a href="../modals/modals.html" class="collapsible-header waves-effect"><i class="w-fa fas"></i>Watch
+              <a href="main.html" class="collapsible-header waves-effect"><i class="w-fa fas"></i>Watch
                 Later</a>
             </li>
             <li>
-              <a href="../charts/charts.html" class="collapsible-header waves-effect"><i
-                  class="w-fa fas"></i>Favourites</a>
+              <a href="main.html" class="collapsible-header waves-effect"><i class="w-fa fas"></i>Favourites</a>
             </li>
             <li>
               <a class="collapsible-header waves-effect arrow-r">
@@ -57,10 +56,10 @@
               <div class="collapsible-body">
                 <ul>
                   <li>
-                    <a href="../dashboards/v-1.html" class="waves-effect">Movies</a>
+                    <a href="" class="waves-effect">Movies</a>
                   </li>
                   <li>
-                    <a href="../dashboards/v-2.html" class="waves-effect">Users</a>
+                    <a href="" class="waves-effect">Users</a>
                   </li>
                 </ul>
               </div>
@@ -130,23 +129,33 @@
   <!-- Main layout -->
   <main>
     <div class="container-fluid">
-      <!-- Movies -->
+      <!-- Movie cards -->
       <section class="mb-4 mt-4">
         <div class="row">
+          <h2 class="profile-title col-lg-12 font-weight-bold"><strong>Trending/Coming soon/Top rated/Watch
+              later/Favourites etc.
+            </strong></h2>
           <div class="row select-by col-12 mb-2">
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn blue-gradient btn-rounded"><i class="fas fa-table"></i></button>
-                    <button type="button" class="btn blue-gradient btn-rounded"><i class="fas fa-list"></i></button>
-                  </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
-                фильтрация
+            <div class="col-lg-4 col-md-6 col-sm-6 d-flex justify-content-start align-items-center">
+              <div class="btn-movies-type btn-group">
+                <button type="button" class="btn blue-gradient btn-rounded"><i class="fas fa-table"></i></button>
+                <button type="button" class="btn blue-gradient btn-rounded"><i class="fas fa-list"></i></button>
               </div>
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-2 d-flex justify-content-end align-items-center">
-              <div class="col-8">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-start align-items-center">
+              <div class="filter-movie input-group md-form form-sm form-1 pl-0">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-text1">
+                    <button class="btn blue-gradient btn-rounded btn-sm my-0 waves-effect waves-light"
+                      type="submit">Filter</button>
+                  </span>
+                </div>
+                <input class="form-control my-0 py-1" type="text" placeholder="Type anything" aria-label="Search">
+              </div>
+
+            </div>
+            <div class="sort-by col-lg-4 col-md-6 col-sm-12 d-flex justify-content-between align-items-center">
+              <div class="col">
                 <select class="mdb-select md-form colorful-select dropdown-primary">
                   <option value="" disabled selected>Sort by</option>
                   <option value="1">Date</option>
@@ -156,14 +165,414 @@
                   <option value="5">Country</option>
                 </select>
               </div>
-              <div class="col-4">
+              <div class="col">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-sm blue-gradient btn-rounded"><i class="fas fa-arrow-up"></i></button>
-                  <button type="button" class="btn btn-sm blue-gradient btn-rounded"><i class="fas fa-arrow-down"></i></button>
+                  <button type="button" class="btn btn-sm blue-gradient btn-rounded"><i
+                      class="fas fa-arrow-up"></i></button>
+                  <button type="button" class="btn btn-sm blue-gradient btn-rounded"><i
+                      class="fas fa-arrow-down"></i></button>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <!-- Card -->
+            <div class="card movie-card h-100">
+              <!-- Card image -->
+              <div class="card-rating">
+                <a class="">8.9 <i class="far fa-star"> </i></a>
+              </div>
+              <div class="card-favourite">
+                <a class=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="card-watch-later">
+                <a class=""><i class="far fa-eye"></i></a>
+              </div>
+              <div class="view overlay">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+                  class="card-img-top" alt="sample">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!-- Card image -->
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <a>
+                  <h4 class="card-title">Pulp Fiction</h4>
+                </a>
+                <p></p>
+                <hr>
+                <!-- Text -->
+                <p class="card-text mb-0">Quentin Tarantino</p>
+                <p class="card-text mb-0">14 Oct 1994, USA</p>
+              </div>
+              <!-- Card content -->
+              <!-- Card footer -->
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <!-- Card -->
+            <div class="card movie-card h-100">
+              <!-- Card image -->
+              <div class="card-rating">
+                <a class="">8.7 <i class="far fa-star"> </i></a>
+              </div>
+              <div class="card-favourite">
+                <a class=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="card-watch-later">
+                <a class=""><i class="far fa-eye"></i></a>
+              </div>
+              <div class="view overlay">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMmIyZjA3NGUtYjlhNS00ZDlkLWI0MDgtMDc2YWNjNGMwYWZhXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SX300.jpg"
+                  class="card-img-top" alt="sample">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!-- Card image -->
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <a>
+                  <h4 class="card-title">Dark</h4>
+                </a>
+                <p></p>
+                <hr>
+                <!-- Text -->
+                <p class="card-text mb-0">N/A</p>
+                <p class="card-text mb-0">01 Dec 2017, Germany, USA</p>
+              </div>
+              <!-- Card content -->
+              <!-- Card footer -->
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <!-- Card -->
+            <div class="card movie-card h-100">
+              <!-- Card image -->
+              <div class="card-rating">
+                <a class="">8.1 <i class="far fa-star"> </i></a>
+              </div>
+              <div class="card-favourite">
+                <a class=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="card-watch-later">
+                <a class=""><i class="far fa-eye"></i></a>
+              </div>
+              <div class="view overlay">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BYzhiNDkyNzktNTZmYS00ZTBkLTk2MDAtM2U0YjU1MzgxZjgzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                  class="card-img-top" alt="sample">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!-- Card image -->
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <a>
+                  <h4 class="card-title">Shutter Island</h4>
+                </a>
+                <p></p>
+                <hr>
+                <!-- Text -->
+                <p class="card-text mb-0">Martin Scorsese</p>
+                <p class="card-text mb-0">19 Feb 2010, USA</p>
+              </div>
+              <!-- Card content -->
+              <!-- Card footer -->
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <!-- Card -->
+            <div class="card movie-card h-100">
+              <!-- Card image -->
+              <div class="card-rating">
+                <a class="">7.2 <i class="far fa-star"> </i></a>
+              </div>
+              <div class="card-favourite">
+                <a class=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="card-watch-later">
+                <a class=""><i class="far fa-eye"></i></a>
+              </div>
+              <div class="view overlay">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BNzQ3ODUzNDY2M15BMl5BanBnXkFtZTgwNzg0ODY2MTE@._V1_SX300.jpg"
+                  class="card-img-top" alt="sample">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!-- Card image -->
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <a>
+                  <h4 class="card-title">Coherence</h4>
+                </a>
+                <p></p>
+                <hr>
+                <!-- Text -->
+                <p class="card-text mb-0">James Ward Byrkit</p>
+                <p class="card-text mb-0">06 Aug 2014, USA, UK</p>
+              </div>
+              <!-- Card content -->
+              <!-- Card footer -->
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <!-- Card -->
+            <div class="card movie-card h-100">
+              <!-- Card image -->
+              <div class="card-rating">
+                <a class="">7.3 <i class="far fa-star"> </i></a>
+              </div>
+              <div class="card-favourite">
+                <a class=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="card-watch-later">
+                <a class=""><i class="far fa-eye"></i></a>
+              </div>
+              <div class="view overlay">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMjIyOTkyMDE5N15BMl5BanBnXkFtZTcwNjIwNzQwMw@@._V1_SX300.jpg"
+                  class="card-img-top" alt="sample">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!-- Card image -->
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <a>
+                  <h4 class="card-title">Dogtooth</h4>
+                </a>
+                <p></p>
+                <hr>
+                <!-- Text -->
+                <p class="card-text mb-0">Yorgos Lanthimos</p>
+                <p class="card-text mb-0">11 Nov 2009, Greece</p>
+              </div>
+              <!-- Card content -->
+              <!-- Card footer -->
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <!-- Card -->
+            <div class="card movie-card h-100">
+              <!-- Card image -->
+              <div class="card-rating">
+                <a class="">6.9 <i class="far fa-star"> </i></a>
+              </div>
+              <div class="card-favourite">
+                <a class=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="card-watch-later">
+                <a class=""><i class="far fa-eye"></i></a>
+              </div>
+              <div class="view overlay">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BY2VlODI5ZmMtZDExYS00OWI4LWJiMWItZWZkZWRkNzlmZWI2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+                  class="card-img-top" alt="sample">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!-- Card image -->
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <a>
+                  <h4 class="card-title">Triangle</h4>
+                </a>
+                <p></p>
+                <hr>
+                <!-- Text -->
+                <p class="card-text mb-0">Christopher Smith</p>
+                <p class="card-text mb-0">16 Oct 2009, UK, Australia</p>
+              </div>
+              <!-- Card content -->
+              <!-- Card footer -->
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <!-- Card -->
+            <div class="card movie-card h-100">
+              <!-- Card image -->
+              <div class="card-rating">
+                <a class="">7.3 <i class="far fa-star"> </i></a>
+              </div>
+              <div class="card-favourite">
+                <a class=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="card-watch-later">
+                <a class=""><i class="far fa-eye"></i></a>
+              </div>
+              <div class="view overlay">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMjE2NzgyNDYzNl5BMl5BanBnXkFtZTYwODM2Nzc2._V1_SX300.jpg"
+                  class="card-img-top" alt="sample">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!-- Card image -->
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <a>
+                  <h4 class="card-title">Identity</h4>
+                </a>
+                <p></p>
+                <hr>
+                <!-- Text -->
+                <p class="card-text mb-0">James Mangold</p>
+                <p class="card-text mb-0">25 Apr 2003, USA</p>
+              </div>
+              <!-- Card content -->
+              <!-- Card footer -->
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <!-- Card -->
+            <div class="card movie-card h-100">
+              <!-- Card image -->
+              <div class="card-rating">
+                <a class="">8.8 <i class="far fa-star"> </i></a>
+              </div>
+              <div class="card-favourite">
+                <a class=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="card-watch-later">
+                <a class=""><i class="far fa-eye"></i></a>
+              </div>
+              <div class="view overlay">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BNThjM2Y3MDUtYTIyNC00ZDliLWJlMmItNWY1N2E5NjhmMGM4XkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_SX300.jpg"
+                  class="card-img-top" alt="sample">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!-- Card image -->
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <a>
+                  <h4 class="card-title">Westworld</h4>
+                </a>
+                <p></p>
+                <hr>
+                <!-- Text -->
+                <p class="card-text mb-0">N/A</p>
+                <p class="card-text mb-0">02 Oct 2016, USA</p>
+              </div>
+              <!-- Card content -->
+              <!-- Card footer -->
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <!-- Card -->
+            <div class="card movie-card h-100">
+              <!-- Card image -->
+              <div class="card-rating">
+                <a class="">6.6 <i class="far fa-star"> </i></a>
+              </div>
+              <div class="card-favourite">
+                <a class=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="card-watch-later">
+                <a class=""><i class="far fa-eye"></i></a>
+              </div>
+              <div class="view overlay">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMjE3MjQ2ODc1N15BMl5BanBnXkFtZTcwNjYyMzI5Mg@@._V1_SX300.jpg"
+                  class="card-img-top" alt="sample">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!-- Card image -->
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <a>
+                  <h4 class="card-title">Antichrist</h4>
+                </a>
+                <p></p>
+                <hr>
+                <!-- Text -->
+                <p class="card-text mb-0">Lars von Trier</p>
+                <p class="card-text mb-0">20 May 2009, Denmark</p>
+              </div>
+              <!-- Card content -->
+              <!-- Card footer -->
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <!-- Card -->
+            <div class="card movie-card movie-card h-100">
+              <!-- Card image -->
+              <div class="card-rating">
+                <a class="">8.3 <i class="far fa-star"> </i></a>
+              </div>
+              <div class="card-favourite">
+                <a class=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="card-watch-later">
+                <a class=""><i class="far fa-eye"></i></a>
+              </div>
+              <div class="view overlay">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BZmExNmEwYWItYmQzOS00YjA5LTk2MjktZjEyZDE1Y2QxNjA1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+                  class="card-img-top" alt="sample">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!-- Card image -->
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <a>
+                  <h4 class="card-title">Reservoir Dogs</h4>
+                </a>
+                <p></p>
+                <hr>
+                <!-- Text -->
+                <p class="card-text mb-0">Quentin Tarantino</p>
+                <p class="card-text mb-0">02 Sep 1992, USA</p>
+                <div class="card-footer">
+                </div>
+              </div>
+              <!-- Card content -->
+              <!-- Card footer -->
+            </div>
+            <!-- Card -->
+          </div>
+        </div>
+      </section>
+      <!-- Movies table -->
+      <section class="mb-4 mt-4">
+        <div class="row">
+          <h2 class="profile-title col-lg-12 font-weight-bold mb-5"><strong>List of movies</strong></h2>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <!-- Card -->
             <div class="card movie-card h-100">

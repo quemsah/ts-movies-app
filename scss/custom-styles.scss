@@ -165,11 +165,30 @@ footer {
     background-color: transparent;
     border: none;
 }
-//sort by filter by
+
+//Sort by filter by
 .row.select-by {
     margin-right: 0px;
     margin-left: 0px;
     padding-right: 0px;
     padding-left: 0px;
+    .sort-by {
+        text-align: right;
+    }
 }
 
+.btn-movies-type {
+    width: 50%;
+    vertical-align: middle;
+    button {
+        text-align: center;
+    }
+}
+
+.filter-movie.input-group .input-group-text {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+//

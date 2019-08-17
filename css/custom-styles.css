@@ -119,5 +119,18 @@ footer {
   margin-left: 0px;
   padding-right: 0px;
   padding-left: 0px; }
+  .row.select-by .sort-by {
+    text-align: right; }
+
+.btn-movies-type {
+  width: 50%;
+  vertical-align: middle; }
+  .btn-movies-type button {
+    text-align: center; }
+
+.filter-movie.input-group .input-group-text {
+  background-color: transparent;
+  border: none;
+  padding: 0; }
 
 /*# sourceMappingURL=custom-styles.css.map */
