@@ -1,12 +1,10 @@
+@import "custom-variables";
+
 .sn-bg-4 {
     background-image: url(..//img/menu/menu-bg2.jpg) !important;
 }
 
 // Cards movies
-$card-white-gray: #eeeeee !default;
-$card-dark-gray: #212529 !default;
-$yellow: yellow !default;
-
 .movie-card {
     img {
         width: 100%;
@@ -194,7 +192,6 @@ footer {
 }
 
 //Table
-//https://mdbootstrap.com/docs/jquery/tables/responsive/
 .film-table {
     thead tr th {
         font-weight: bold;
@@ -252,18 +249,7 @@ footer {
         }
 
         /*
-Label the data
-          <th>Name</th>
-          <th>Date</th>
-          <th>IMDB Rating</th>
-          <th>Director</th>
-          <th>Country</th>
-          <th><div class="table-i">
-            <a class=""><i class="far fa-star"></i></a>
-          </div></th>
-          <th><div class="table-i">
-            <a class=""><i class="far fa-eye"></i></a>
-          </div></th>
+Названия ячеечек
 */
         td:nth-of-type(1):before {
             content: "Date";
@@ -289,4 +275,14 @@ Label the data
             content: "Watch Later";
         }
     }
+}
+
+//Movie page
+.movie-card-img {
+    height: inherit;
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
+
 }

@@ -18,6 +18,8 @@ $(function () {
     $('.card-watch-later a').toggleClass('text-white');
     $('.dropdown-content').toggleClass('dark-card-admin');
     $('.dropdown-content li > a, .dropdown-content li > span').toggleClass('text-white');
+    $('.chip').toggleClass('text-white').toggleClass('dark-card-admin');
+    $('.full-movie-card').removeClass('dark-card-admin');
     $('#dark-mode').toggleClass('dark-card-admin').removeClass('text-dark');
   });
 });

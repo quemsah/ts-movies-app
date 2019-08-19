@@ -142,18 +142,7 @@ footer {
     /* Force table to not be like tables anymore */
     /* Hide table headers (but not display: none;, for accessibility) */
         /*
-Label the data
-          <th>Name</th>
-          <th>Date</th>
-          <th>IMDB Rating</th>
-          <th>Director</th>
-          <th>Country</th>
-          <th><div class="table-i">
-            <a class=""><i class="far fa-star"></i></a>
-          </div></th>
-          <th><div class="table-i">
-            <a class=""><i class="far fa-eye"></i></a>
-          </div></th>
+Названия ячеечек
 */ }
     .film-table table,
     .film-table thead,
@@ -191,5 +180,11 @@ Label the data
       content: "Favourite"; }
     .film-table td:nth-of-type(6):before {
       content: "Watch Later"; } }
+
+.movie-card-img {
+  height: inherit; }
+  @media (max-width: 1200px) {
+    .movie-card-img {
+      display: none; } }
 
 /*# sourceMappingURL=custom-styles.css.map */

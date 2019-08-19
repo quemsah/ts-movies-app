@@ -43,6 +43,28 @@
               <a href="main.html" class="collapsible-header waves-effect"><i class="w-fa far"></i>Movies</a>
             </li>
             <li>
+              <a href="main.html" class="collapsible-header waves-effect"><i class="w-fa fas"></i>Watch
+                Later</a>
+            </li>
+            <li>
+              <a href="main.html" class="collapsible-header waves-effect"><i class="w-fa fas"></i>Favourites</a>
+            </li>
+            <li>
+              <a class="collapsible-header waves-effect arrow-r">
+                <i class="w-fa fas"></i>Administration<i class="fas fa-angle-down rotate-icon"></i>
+              </a>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="" class="waves-effect">Movies</a>
+                  </li>
+                  <li>
+                    <a href="" class="waves-effect">Users</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
               <a href="about.html" class="collapsible-header waves-effect"><i class="w-fa fas"></i>About the project</a>
             </li>
           </ul>
@@ -69,8 +91,21 @@
         <!-- Navbar links -->
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
           <!-- Dropdown -->
+          <li class="nav-item dropdown notifications-nav">
+            <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="badge red">1</span> <i class="fas fa-bell"></i>
+              <span class="d-none d-md-inline-block">Notifications</span>
+            </a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">
+                <i class="far fa-money-bill-alt mr-2" aria-hidden="true"></i>
+                <span>New friend request</span>
+              </a>
+            </div>
+          </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect"><i class="fas fa-envelope"></i> <span
+            <a class="nav-link waves-effect" href="mailto:quemsaurose@gmail.com"><i class="fas fa-envelope"></i> <span
                 class="clearfix d-none d-sm-inline-block">Mail us</span></a>
           </li>
           <li class="nav-item dropdown">
@@ -80,6 +115,8 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
               <a class="dropdown-item" href="login.html">Log in</a>
+              <a class="dropdown-item" href="friends.html">Friends</a>
+              <a class="dropdown-item" href="profile.html">My account</a>
             </div>
           </li>
         </ul>
@@ -92,51 +129,68 @@
   <!-- Main layout -->
   <main>
     <div class="container-fluid">
-      <section class="mb-5 mt-5">
+      <!-- Movie cards -->
+      <section class="mb-4 mt-4">
         <div class="row">
-          <div class="col-xl-5 col-lg-6 col-md-8 col-sm-8 mx-auto mt-5">
-            <!-- Form with header -->
-            <div class="card-body">
-              <!-- Header -->
-              <div class="form-header blue-gradient">
-                <h3 class="font-weight-500 my-2 py-1"><i class="fas fa-user"></i> Create account:</h3>
+          <!-- Jumbotron -->
+          <div class="full-movie-card card card-image"
+            style="background-image: url(https://image.tmdb.org/t/p/w1400_and_h450_face/4cDFJr4HnXN5AdPw4AKrmLlMWdO.jpg);">
+            <div class="text-white rgba-stylish-strong p-4 d-flex justify-content-between">
+              <div class="col-xl-8">
+                <h2 class="card-title h2">Pulp fiction</h2>
+                <h5 class="h5 light-blue-text"> 14 Oct 1994, USA</h5>
+                <h5 class="h5 my-2 p-0">Quentin Tarantino</h5>
+                <p class=" my-2 p-0">Runtime: 154 min</p>
+                <ul class="list-unstyled d-flex justify-content-start my-1 p-0">
+                  <li class="">
+                    <div class="chip waves-effect waves-effect my-1">Thriller</div>
+                  </li>
+                  <li>
+                    <div class="chip waves-effect waves-effect my-1">Crime</div>
+                  </li>
+                </ul>
+                <h6 class="h6 yellow-text my-2 p-0"><i class="far fa-star"> </i> 8.3 IMDB</h6>
+                <h4 class="h4 m-0 p-0">Overview</h4>
+                <p class="my-2">A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a
+                  washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three
+                  stories that ingeniously trip back and forth in time.</p>
+                <p class="m-0 p-0">Budget: $8,000,000.00</p>
+                <p class="mb-1 p-0">Revenue: $213,928,762.00</p>
+                <button type="button" class="btn btn-md blue-gradient ml-0">
+                  <i class="far fa-clock pr-1"></i> Watch later
+                </button>
+                <button type="button" class="btn btn-md blue-gradient ml-0">
+                  <i class="far fa-heart pr-1"></i> Favourite
+                </button>
+                <button type="button" class="btn btn-md blue-gradient ml-0">
+                  <i class="fas fa-share-alt pr-1"></i> Share
+                </button>
               </div>
-              <!-- Body -->
-              <!-- Body -->
-              <div class="md-form">
-                <i class="fas fa-envelope prefix blue-text"></i>
-                <input type="text" id="orangeForm-email" class="form-control">
-                <label for="orangeForm-email">Your email</label>
-              </div>
-              <div class="md-form">
-                <i class="fas fa-sign-in-alt prefix blue-text"></i>
-                <input type="text" id="orangeForm-email" class="form-control">
-                <label for="orangeForm-email">Login</label>
-              </div>
-              <div class="md-form">
-                <i class="fas fa-user prefix blue-text"></i>
-                <input type="text" id="orangeForm-email" class="form-control">
-                <label for="orangeForm-email">Your name</label>
-              </div>
-              <div class="md-form">
-                <i class="fas fa-unlock prefix blue-text"></i>
-                <input type="password" id="orangeForm-pass" class="form-control">
-                <label for="orangeForm-pass">Your password</label>
-              </div>
-              <div class="md-form">
-                <i class="fas fa-lock prefix blue-text"></i>
-                <input type="password" id="orangeForm-pass" class="form-control">
-                <label for="orangeForm-pass">Confirm password</label>
-              </div>
-              <div class="text-center">
-                <button class="btn blue-gradient btn-lg">Register</button>
+              <div class="">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+                  class="movie-card-img" alt="sample">
               </div>
             </div>
-            <!-- Form with header -->
           </div>
+          <!-- Jumbotron -->
+
         </div>
       </section>
+      <section class="mb-4 mt-4">
+        cast
+      </section>
+      <section class="mb-4 mt-4">
+        trailers
+      </section>
+      <section class="mb-4 mt-4">
+        similar movies
+      </section>
+      <section class="mb-4 mt-4">
+        comments
+      </section>
     </div>
+
   </main>
   <!-- Main layout -->
   <!-- Footer -->
@@ -166,6 +220,10 @@
   <script>
     // SideNav Initialization
     $(".button-collapse").sideNav();
+    // Material Select Initialization
+    $(document).ready(function () {
+      $('.mdb-select').material_select();
+    });
   </script>
 </body>
 
