@@ -182,7 +182,8 @@ footer {
       content: "Watch Later"; } }
 
 .movie-card-img {
-  height: inherit; }
+  height: inherit;
+  margin-top: 0; }
   @media (max-width: 1200px) {
     .movie-card-img {
       display: none; } }

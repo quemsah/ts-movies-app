@@ -280,9 +280,18 @@ footer {
 //Movie page
 .movie-card-img {
     height: inherit;
+    margin-top: 0;
 
     @media (max-width: 1200px) {
         display: none;
     }
+}
 
+//Stick to top on mobile?
+@media (max-width: 600px) {
+    .fixed-sn .double-nav,
+    .fixed-sn main,
+    .fixed-sn footer {
+        //padding-top: 3rem;
+    }
 }
