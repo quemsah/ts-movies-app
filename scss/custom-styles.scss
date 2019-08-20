@@ -3,6 +3,9 @@
 .sn-bg-4 {
     background-image: url(..//img/menu/menu-bg2.jpg) !important;
 }
+.navy-blue-skin {
+    background-color: #353b50; 
+}
 
 // Cards movies
 .movie-card {
@@ -289,9 +292,25 @@ footer {
 
 //Stick to top on mobile?
 @media (max-width: 600px) {
+
     .fixed-sn .double-nav,
     .fixed-sn main,
     .fixed-sn footer {
         //padding-top: 3rem;
+    }
+}
+//переопределение табов
+.tab-content {
+   // width: 100%;
+}
+//Actor card
+.movie-tabs {
+    width: 100%;
+}
+//Comments
+.question-card {
+    .btn.btn-sm {
+        padding: .1rem .6rem;
+        font-size: 1rem;
     }
 }
