@@ -319,9 +319,95 @@ footer {
     }
 }
 
-//movie.html mobile fix
-// @media (max-width: 600px) {
-//     .fixed-sn {
-//         padding-top: 1.8rem;
-//     }
-// }
+//mobile movie.html fix
+@media (max-width: 600px) {
+    .full-movie-card main {
+        padding-top: 2rem;
+    }
+}
+
+// List & Grid view
+.movie-item {
+    .movie-card {
+        margin-bottom: 0px;
+        padding: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+    }
+}
+
+.movie-item.list-item {
+    float: none;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 30px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    border: 0;
+}
+
+.movie-item.list-item .view.overlay {
+    float: left;
+    width: 9%;
+    //margin-right: 10px;
+}
+
+.movie-item.list-item .card-rating {
+    position: absolute;
+    right: 60px;
+    left: auto;
+    top: 0;
+    width: 60px;
+    height: 30px //margin-right: 10px;
+}
+
+.movie-item.list-item .card-body {
+    display: table-cell;
+    width: 91%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    .card-title,
+    p {
+        display: table;
+    }
+}
+
+
+
+@media (max-width: 732px) {
+    .movie-item.list-item .card-body {
+        padding: 0.5rem;
+
+        p {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .movie-item.list-item .card-body {
+        padding: 1rem;
+    }
+    .movie-item.list-item hr {
+        display: none;
+    }
+}
+
+@media (min-width: 1600px) {
+    .movie-item.list-item .card-body {
+        padding: 2rem;
+        h4 {
+            font-size: 1.7rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
