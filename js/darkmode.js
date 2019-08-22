@@ -23,6 +23,10 @@
    $('.card .actor-card').toggleClass('white-skin navy-blue-skin');
    $('.question-card i').removeClass('text-white');
    $('.question-card a.btn').toggleClass('dark-card-admin');
+   $('.select-rating').toggleClass('text-white');
+   $('.select-option').toggleClass('dark-card-admin');
+   $('.form-control').removeClass('text-dark').toggleClass('text-white');
+  
  }
  $('#dark-mode').click(function (event) {
    enableDarkMode(event);

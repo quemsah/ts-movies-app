@@ -185,7 +185,6 @@ footer {
       content: "Watch Later"; } }
 
 .movie-card-img {
-  height: inherit;
   margin-top: 0; }
   @media (max-width: 1200px) {
     .movie-card-img {
@@ -200,7 +199,7 @@ footer {
 
 @media (max-width: 600px) {
   .full-movie-card main {
-    padding-top: 2rem; } }
+    padding-top: 1.7rem; } }
 .movie-item .movie-card {
   margin-bottom: 0px;
   padding: 0px;
@@ -261,5 +260,17 @@ footer {
       font-size: 1.7rem; }
     .movie-item.list-item .card-body p {
       font-size: 1rem; } }
+.select-rating {
+  font-family: "Roboto", sans-serif;
+  font-size: .875rem;
+  font-weight: 300;
+  background: transparent; }
+
+.select-option {
+  font-family: "Roboto", sans-serif;
+  font-size: .875rem;
+  font-weight: 300;
+  background: transparent;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }
 
 /*# sourceMappingURL=custom-styles.css.map */

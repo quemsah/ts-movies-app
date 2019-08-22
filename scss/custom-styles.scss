@@ -283,7 +283,7 @@ footer {
 
 //Movie page
 .movie-card-img {
-    height: inherit;
+    //height: inherit;
     margin-top: 0;
 
     @media (max-width: 1200px) {
@@ -322,7 +322,7 @@ footer {
 //mobile movie.html fix
 @media (max-width: 600px) {
     .full-movie-card main {
-        padding-top: 2rem;
+        padding-top: 1.7rem;
     }
 }
 
@@ -395,6 +395,7 @@ footer {
     .movie-item.list-item .card-body {
         padding: 1rem;
     }
+
     .movie-item.list-item hr {
         display: none;
     }
@@ -403,11 +404,33 @@ footer {
 @media (min-width: 1600px) {
     .movie-item.list-item .card-body {
         padding: 2rem;
+
         h4 {
             font-size: 1.7rem;
         }
+
         p {
             font-size: 1rem;
         }
     }
 }
+
+//Edit movie
+.select-rating {
+    //background: #262A37;
+    font-family: "Roboto", sans-serif;
+    font-size: .875rem;
+    font-weight: 300;
+    background: transparent;
+}
+
+.select-option {
+    font-family: "Roboto", sans-serif;
+    font-size: .875rem;
+    font-weight: 300;
+    //background: #262A37;
+    background: transparent;
+    //color: $card-dark-gray;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
