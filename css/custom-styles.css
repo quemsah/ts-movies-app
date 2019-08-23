@@ -122,11 +122,11 @@ footer {
   margin-left: 0px;
   padding-right: 0px;
   padding-left: 0px; }
-  .row.select-by .sort-by {
-    text-align: right; }
+  .row.select-by .sort-by .md-form {
+    margin-top: 0; }
 
 .btn-movies-type {
-  width: 50%;
+  width: 133px;
   vertical-align: middle; }
   .btn-movies-type button {
     text-align: center; }

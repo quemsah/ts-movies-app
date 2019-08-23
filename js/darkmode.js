@@ -26,6 +26,9 @@
    $('.select-rating').toggleClass('text-white');
    $('.select-option').toggleClass('dark-card-admin');
    $('.form-control').removeClass('text-dark').toggleClass('text-white');
+   $('.movie-bg.card').removeClass('dark-card-admin').removeClass('text-white');
+   $('.movie-bg.card i').removeClass('text-white');
+   $('.form-control').toggleClass('text-white');
   
  }
  $('#dark-mode').click(function (event) {
