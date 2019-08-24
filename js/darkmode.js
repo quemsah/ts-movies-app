@@ -34,6 +34,7 @@
  $('#dark-mode').click(function (event) {
    enableDarkMode(event);
  });
+
  //сразу
  // (function ($) {
  //   $('#dark-mode').ready(function (event) {
