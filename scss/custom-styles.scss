@@ -176,7 +176,7 @@ footer {
     padding-left: 0px;
 
     .sort-by .md-form {
-        margin-top:0;
+        margin-top: 0;
     }
 }
 
@@ -318,6 +318,13 @@ footer {
         padding: .1rem .6rem;
         font-size: 1rem;
     }
+
+    // .btn.btn-sm:hover {
+    //     i.far.fa-edit {
+    //         color: blue;
+    //     }
+    // }
+
 }
 
 //mobile movie.html fix
@@ -380,11 +387,9 @@ footer {
     }
 }
 
-
-
 @media (max-width: 732px) {
     .movie-item.list-item .card-body {
-        padding: 0.5rem;
+        padding: 0.3rem;
 
         p {
             display: none;
@@ -394,7 +399,7 @@ footer {
 
 @media (max-width: 1000px) {
     .movie-item.list-item .card-body {
-        padding: 1rem;
+        padding: 0.7rem;
     }
 
     .movie-item.list-item hr {
@@ -434,13 +439,13 @@ footer {
     //color: $card-dark-gray;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
+
 //Pagination bg darkmode fix
 .pagination .page-item .page-link:hover {
-    background-color: transparent;
+    background-color: rgba(66, 133, 244, 0.2);
+    ;
 }
-.page-item:hover {
-    background-color: rgba(66,133,244,0.2);;
-}
+
 // .dropdown-menu:not(.show) .dropdown-menu {
 //     display: none;
 // }

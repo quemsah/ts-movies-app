@@ -244,12 +244,12 @@ footer {
 
 @media (max-width: 732px) {
   .movie-item.list-item .card-body {
-    padding: 0.5rem; }
+    padding: 0.3rem; }
     .movie-item.list-item .card-body p {
       display: none; } }
 @media (max-width: 1000px) {
   .movie-item.list-item .card-body {
-    padding: 1rem; }
+    padding: 0.7rem; }
 
   .movie-item.list-item hr {
     display: none; } }
@@ -274,9 +274,6 @@ footer {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }
 
 .pagination .page-item .page-link:hover {
-  background-color: transparent; }
-
-.page-item:hover {
   background-color: rgba(66, 133, 244, 0.2); }
 
 /*# sourceMappingURL=custom-styles.css.map */
