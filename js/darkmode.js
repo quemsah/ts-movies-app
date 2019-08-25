@@ -21,15 +21,19 @@
    $('.full-movie-card').removeClass('dark-card-admin');
    $('.card .actor-card').removeClass('dark-card-admin');
    $('.card .actor-card').toggleClass('white-skin navy-blue-skin');
-   $('.question-card i').removeClass('text-white');
-   $('.question-card a.btn').toggleClass('dark-card-admin');
+   //comments
+   $('.question-card .btn.btn-sm').toggleClass('dark-card-admin');
+   $('i.far.fa-thumbs-up').removeClass('text-white');
+   $('i.far.fa-thumbs-down').removeClass('text-white');
+   //
    $('.select-rating').toggleClass('text-white');
    $('.select-option').toggleClass('dark-card-admin');
    $('.form-control').removeClass('text-dark').toggleClass('text-white');
    $('.movie-bg.card').removeClass('dark-card-admin').removeClass('text-white');
    $('.movie-bg.card i').removeClass('text-white');
    $('.form-control').toggleClass('text-white');
-  
+   $('.md-form textarea.md-textarea').toggleClass('text-white');
+
  }
  $('#dark-mode').click(function (event) {
    enableDarkMode(event);
