@@ -70,9 +70,9 @@ $patterns: (
   9: "09"
 );
 
-@each $no, $filename in $patterns {
-  .pattern-#{$no} {
-    background: url("#{$image-path}/overlays/#{$filename}.png");
-    background-attachment: fixed;
-  }
-}
+// @each $no, $filename in $patterns {
+//   .pattern-#{$no} {
+//     background: url("#{$image-path}/overlays/#{$filename}.png");
+//     background-attachment: fixed;
+//   }
+// }
