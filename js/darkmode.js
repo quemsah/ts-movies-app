@@ -27,7 +27,7 @@
    $('i.far.fa-thumbs-down').removeClass('text-white');
    $('i.far.fa-trash-alt').removeClass('text-white');
    //$('i.far.fa-edit').removeClass('text-white');
-   $('i.far.fa-edit').toggleClass('blue-text');
+   $('.comment-btns a i.far.fa-edit').toggleClass('blue-text');
    //
    $('.select-rating').toggleClass('text-white');
    $('.select-option').toggleClass('dark-card-admin');

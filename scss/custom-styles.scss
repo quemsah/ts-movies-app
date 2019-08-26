@@ -203,12 +203,6 @@ footer {
     }
 
     th {
-
-        //text-align: center;
-        .table-i {
-            // color:red;
-        }
-
         tr {
             color: #007bff;
         }
@@ -295,17 +289,17 @@ footer {
 //Stick to top on mobile?
 @media (max-width: 600px) {
 
-    .fixed-sn .double-nav,
-    .fixed-sn main,
-    .fixed-sn footer {
-        //padding-top: 3rem;
-    }
+    // .fixed-sn .double-nav,
+    // .fixed-sn main,
+    // .fixed-sn footer {
+    //     padding-top: 3rem;
+    // }
 }
 
 //переопределение табов
-.tab-content {
-    // width: 100%;
-}
+// .tab-content {
+//     width: 100%;
+// }
 
 //Actor card
 .movie-tabs {
