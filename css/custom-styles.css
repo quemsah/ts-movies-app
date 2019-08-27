@@ -1,6 +1,12 @@
 @charset "UTF-8";
 .sn-bg-4 {
-  background-image: url(..//img/menu/menu-bg2.jpg) !important; }
+  background-image: url("..//img/menu/menu-bg2.jpg") !important; }
+
+.dark-gray-text {
+  color: #212529 !important; }
+
+.simple-gray-text {
+  color: #a8a8a8 !important; }
 
 .navy-blue-skin {
   background-color: #353b50; }
@@ -50,7 +56,7 @@
 .movie-card .card-body {
   width: 100%;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   background: linear-gradient(to top, #212529 33%, rgba(33, 37, 41, 0.5)); }
   .movie-card .card-body hr {
     background-color: #eeeeee;
@@ -77,7 +83,7 @@
       .movie-card .card-body .card-text {
         font-size: 12px; } }
 .movie-card .card-footer {
-  padding: 0px; }
+  padding: 0; }
 .movie-card .md-form label {
   font-weight: 300; }
 
@@ -118,10 +124,10 @@ footer {
   border: none; }
 
 .row.select-by {
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-right: 0px;
-  padding-left: 0px; }
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0; }
   .row.select-by .sort-by .md-form {
     margin-top: 0; }
 
@@ -136,53 +142,23 @@ footer {
   border: none;
   padding: 0; }
 
-.film-table thead tr th {
-  font-weight: bold; }
-.film-table th tr {
-  color: #007bff; }
-@media only screen and (max-width: 40em) {
-  .film-table {
-    /* Force table to not be like tables anymore */
-    /* Hide table headers (but not display: none;, for accessibility) */
-        /*
-Названия ячеечек
-*/ }
-    .film-table table,
-    .film-table thead,
-    .film-table tbody,
-    .film-table th,
-    .film-table td,
-    .film-table tr {
-      display: block; }
-    .film-table thead tr {
-      display: none; }
-    .film-table td {
-      /* Behave  like a "row" */
-      border: none;
-      position: relative;
-      padding-left: 50%; }
-    .film-table tr th {
-      font-weight: bold; }
-    .film-table td:before {
-      /* Now like a table header */
-      position: absolute;
-      /* Top/left values mimic padding */
-      left: 12px;
-      width: 45%;
-      padding-right: 10px;
-      white-space: nowrap; }
-    .film-table td:nth-of-type(1):before {
-      content: "Date"; }
-    .film-table td:nth-of-type(2):before {
-      content: "IMDB Rating"; }
-    .film-table td:nth-of-type(3):before {
-      content: "Director"; }
-    .film-table td:nth-of-type(4):before {
-      content: "Country"; }
-    .film-table td:nth-of-type(5):before {
-      content: "Favourite"; }
-    .film-table td:nth-of-type(6):before {
-      content: "Watch Later"; } }
+.movie-bg {
+  background: rgba(0, 0, 0, 0); }
+
+.movie-row {
+  position: relative;
+  overflow: hidden; }
+
+.hipstah-fix {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  width: auto;
+  height: 100%;
+  filter: blur(1px) brightness(0.9); }
+
+.stylish-card {
+  background-color: rgba(62, 69, 81, 0.6); }
 
 .movie-card-img {
   margin-top: 0; }
@@ -190,22 +166,27 @@ footer {
     .movie-card-img {
       display: none; } }
 
+.actor-card {
+  flex-direction: column-reverse; }
+  .actor-card .card-body {
+    white-space: nowrap; }
+
 .movie-tabs {
   width: 100%; }
 
 .question-card .btn.btn-sm {
-  padding: .1rem .6rem;
+  padding: 0.1rem 0.6rem;
   font-size: 1rem; }
 
 @media (max-width: 600px) {
   .full-movie-card main {
     padding-top: 1.7rem; } }
 .movie-item .movie-card {
-  margin-bottom: 0px;
-  padding: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px; }
+  margin-bottom: 0;
+  padding: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
 
 .movie-item.list-item {
   float: none;
@@ -235,9 +216,9 @@ footer {
   width: 91%;
   height: 100%;
   position: absolute;
-  right: 0px;
-  top: 0px;
-  bottom: 0px; }
+  right: 0;
+  top: 0;
+  bottom: 0; }
   .movie-item.list-item .card-body .card-title,
   .movie-item.list-item .card-body p {
     display: table; }
@@ -262,13 +243,13 @@ footer {
       font-size: 1rem; } }
 .select-rating {
   font-family: "Roboto", sans-serif;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 300;
   background: transparent; }
 
 .select-option {
   font-family: "Roboto", sans-serif;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 300;
   background: transparent;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }

@@ -1,7 +1,15 @@
 @import "custom-variables";
 
 .sn-bg-4 {
-    background-image: url(..//img/menu/menu-bg2.jpg) !important;
+    background-image: url("..//img/menu/menu-bg2.jpg") !important;
+}
+
+.dark-gray-text {
+    color: $card-dark-gray !important;
+}
+
+.simple-gray-text {
+    color: $simple-gray !important;
 }
 
 .navy-blue-skin {
@@ -65,7 +73,7 @@
     .card-body {
         width: 100%;
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         background: linear-gradient(to top, rgba($card-dark-gray, 1) 33%, rgba($card-dark-gray, 0.5));
 
         hr {
@@ -106,7 +114,7 @@
     }
 
     .card-footer {
-        padding: 0px;
+        padding: 0;
     }
 
     .md-form {
@@ -170,16 +178,15 @@ footer {
 
 //Sort by filter by
 .row.select-by {
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
 
     .sort-by .md-form {
         margin-top: 0;
     }
 }
-
 
 .btn-movies-type {
     width: 133px;
@@ -196,87 +203,34 @@ footer {
     padding: 0;
 }
 
-//Table
-.film-table {
-    thead tr th {
-        font-weight: bold;
-    }
+// Movie page
+// .movie-row {
+//     position: relative;
+//     overflow: hidden;
+// }
 
-    th {
-        tr {
-            color: #007bff;
-        }
-    }
-
-    @media only screen and (max-width: 40em) {
-
-        /* Force table to not be like tables anymore */
-        table,
-        thead,
-        tbody,
-        th,
-        td,
-        tr {
-            display: block;
-        }
-
-        /* Hide table headers (but not display: none;, for accessibility) */
-        thead tr {
-            display: none;
-        }
-
-        td {
-            /* Behave  like a "row" */
-            border: none;
-            //border-bottom: 1px solid #eee;
-            position: relative;
-            padding-left: 50%;
-        }
-
-        tr th {
-            font-weight: bold;
-        }
-
-        td:before {
-            /* Now like a table header */
-            position: absolute;
-            /* Top/left values mimic padding */
-            left: 12px;
-            width: 45%;
-            padding-right: 10px;
-            white-space: nowrap;
-        }
-
-        /*
-Названия ячеечек
-*/
-        td:nth-of-type(1):before {
-            content: "Date";
-        }
-
-        td:nth-of-type(2):before {
-            content: "IMDB Rating";
-        }
-
-        td:nth-of-type(3):before {
-            content: "Director";
-        }
-
-        td:nth-of-type(4):before {
-            content: "Country";
-        }
-
-        td:nth-of-type(5):before {
-            content: "Favourite";
-        }
-
-        td:nth-of-type(6):before {
-            content: "Watch Later";
-        }
-    }
+.movie-bg {
+    background: rgba(0, 0, 0, 0);
 }
 
-//Movie page
+.movie-row {
+    position: relative;
+    overflow: hidden;
+}
+
+.hipstah-fix {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: auto;
+    height: 100%;
+    filter: blur(1px) brightness(0.9);
+}
+
+.stylish-card {
+    background-color: rgba(62,69,81,0.6);
+}
+
 .movie-card-img {
     //height: inherit;
     margin-top: 0;
@@ -302,6 +256,14 @@ footer {
 // }
 
 //Actor card
+.actor-card {
+    flex-direction: column-reverse;
+
+    .card-body {
+        white-space: nowrap;
+    }
+}
+
 .movie-tabs {
     width: 100%;
 }
@@ -309,7 +271,7 @@ footer {
 //Comments
 .question-card {
     .btn.btn-sm {
-        padding: .1rem .6rem;
+        padding: 0.1rem 0.6rem;
         font-size: 1rem;
     }
 
@@ -331,11 +293,11 @@ footer {
 // List & Grid view
 .movie-item {
     .movie-card {
-        margin-bottom: 0px;
-        padding: 0px;
-        -webkit-border-radius: 0px;
-        -moz-border-radius: 0px;
-        border-radius: 0px;
+        margin-bottom: 0;
+        padding: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
     }
 }
 
@@ -362,8 +324,8 @@ footer {
     right: 60px;
     left: auto;
     top: 0;
-    width: 60px;
-    height: 30px //margin-right: 10px;
+    width: 60px; //margin-right: 10px;
+    height: 30px;
 }
 
 .movie-item.list-item .card-body {
@@ -371,9 +333,9 @@ footer {
     width: 91%;
     height: 100%;
     position: absolute;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    right: 0;
+    top: 0;
+    bottom: 0;
 
     .card-title,
     p {
@@ -419,14 +381,14 @@ footer {
 .select-rating {
     //background: #262A37;
     font-family: "Roboto", sans-serif;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 300;
     background: transparent;
 }
 
 .select-option {
     font-family: "Roboto", sans-serif;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 300;
     //background: #262A37;
     background: transparent;
@@ -437,7 +399,6 @@ footer {
 //Pagination bg darkmode fix
 .pagination .page-item .page-link:hover {
     background-color: rgba(66, 133, 244, 0.2);
-    ;
 }
 
 // .dropdown-menu:not(.show) .dropdown-menu {

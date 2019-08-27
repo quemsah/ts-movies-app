@@ -119,7 +119,7 @@ $data in $skins {
           border-bottom: $skins-white-search-border-bottom solid $skins-border-color;
 
           @include placeholder {
-            color: rgba(map-get($data, skin-text), .5) !important;
+            color: rgba(map-get($data, skin-text), .8) !important; //.5 imp
           }
         }
       }
@@ -193,7 +193,7 @@ $data in $skins {
 
         &:after,
         &.mask-strong:after {
-          background: map-get($data, skin-mask-strong);
+          background: map-get($data, skin-mask-light); //strong
         }
 
         &.mask-light:after {
